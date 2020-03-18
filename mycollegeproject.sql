@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2020 at 02:02 PM
+-- Generation Time: Mar 18, 2020 at 02:19 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -35,6 +35,14 @@ CREATE TABLE `customer` (
   `cust_phone` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`cust_id`, `cust_name`, `cust_address`, `cust_phone`) VALUES
+(1, 'User 1', 'Dublin 1', '089454XXXX'),
+(2, 'User 2', 'Dublin 2', '089567XXXX');
+
 -- --------------------------------------------------------
 
 --
@@ -62,6 +70,14 @@ CREATE TABLE `product` (
   `prod_quan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`prod_id`, `prod_desc`, `prod_price`, `prod_quan`) VALUES
+(1, 'Coke', 1, 20),
+(2, 'Pepsi', 1, 25);
+
 -- --------------------------------------------------------
 
 --
@@ -73,6 +89,14 @@ CREATE TABLE `user_login` (
   `user_name` varchar(50) NOT NULL,
   `user_password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user_login`
+--
+
+INSERT INTO `user_login` (`user_id`, `user_name`, `user_password`) VALUES
+(1, 'user1', 'user1'),
+(2, 'user2', 'user2');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
