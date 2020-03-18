@@ -5,8 +5,11 @@
 <h1>My first PHP page</h1>
 
 <?php
-echo "Hello World! I am philip assignement";
+echo "Order Management System";
+$username;
+$password;
 ?>
-
+UserName:
+Password:
 </body>
 </html>
